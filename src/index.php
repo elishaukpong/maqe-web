@@ -3,8 +3,7 @@
 require_once '../vendor/autoload.php';
 
 $loader = new \Twig\Loader\FilesystemLoader('/');
-//$twig = new \Twig\Environment($loader, ['cache' => './cache',]);
-$twig = new \Twig\Environment($loader);
+$twig = new \Twig\Environment($loader, ['cache' => './cache',]);
 
 $cURLConnection = curl_init('https://maqe.github.io/json/authors.json');
 curl_setopt($cURLConnection, CURLOPT_RETURNTRANSFER, true);

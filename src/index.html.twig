@@ -83,6 +83,15 @@
         .second{
             background-color: #CCECFF;
         }
+
+        @media only screen and (max-width: 820px) {
+            .body{
+                flex-direction: column;
+            }
+            .image{
+                margin: 0 auto;
+            }
+        }
     </style>
 
 </head>
@@ -116,28 +125,6 @@
         </div>
 
     {% endfor %}
-
-
-{#    <div class="authors-grep second">#}
-{#        <div class="header">#}
-{#            <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="">#}
-{#            <p><span class="author-name">Jason Bourne</span> posted on Saturday, May 9, 2020, 00:01</p>#}
-{#        </div>#}
-
-{#        <div class="body">#}
-{#            <div class="image">#}
-{#                <img src="https://picsum.photos/id/1/320/240" alt="">#}
-{#            </div>#}
-{#            <div class="text">#}
-{#                <h3>Let's see this awesome post</h3>#}
-{#                <p>#}
-{#                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate deleniti dignissimos earum eos#}
-{#                    explicabo harum ipsam iure magnam minima molestias nostrum nulla officia quaerat quam, sed, similique#}
-{#                    sint temporibus?#}
-{#                </p>#}
-{#            </div>#}
-{#        </div>#}
-{#    </div>#}
 
 </div>
 
